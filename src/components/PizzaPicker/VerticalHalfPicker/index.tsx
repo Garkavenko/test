@@ -87,4 +87,4 @@ function VerticalHalfPicker({
   );
 }
 
-export default VerticalHalfPicker;
+export default React.memo(VerticalHalfPicker);

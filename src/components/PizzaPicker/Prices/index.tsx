@@ -26,7 +26,9 @@ function Prices({leftItem, rightItem}: PricesProps) {
     <View style={styles.container}>
       {leftItem.id === rightItem.id ? (
         <View style={styles.block}>
-          <Text style={[styles.title, styles.centeredText]}>{leftItem.title}</Text>
+          <Text style={[styles.title, styles.centeredText]}>
+            {leftItem.title}
+          </Text>
         </View>
       ) : (
         <>
@@ -38,4 +40,4 @@ function Prices({leftItem, rightItem}: PricesProps) {
   );
 }
 
-export default Prices;
+export default React.memo(Prices);

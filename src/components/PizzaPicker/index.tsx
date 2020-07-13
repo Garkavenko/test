@@ -67,4 +67,4 @@ function PizzaPicker() {
   );
 }
 
-export default PizzaPicker;
+export default React.memo(PizzaPicker);
